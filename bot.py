@@ -57,4 +57,5 @@ def unknown_command(message):
     bot.reply_to(message, "Sorry, I don't understand that command. Try /start, /hello, or /horoscope.")
 
 # Run bot
-bot.infinity_polling()
+bot.infinity_polling(timeout=10, long_polling_timeout=5)
+
